@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather APP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="h-[100vh] flex justify-center items-center">
+    <div class="h-[80%] w-[80%] rounded-lg overflow-hidden shadow-lg flex ">
+      <div class="h-full w-[40%] p-40">
+        Hello
+      </div>
+      <div class="h-full w-[60%]  flex justify-center items-center">
+        <dotlottie-player src="https://lottie.host/20f898a9-1047-40e8-9fbb-cf697dc319bb/nZjnPY431q.json" background="transparent" speed="1" style="width: 600px; height: 600px;" loop autoplay></dotlottie-player>
+      </div>
+    </div>
+  </body>
+</html>
